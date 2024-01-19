@@ -14,8 +14,7 @@ const processInput = (user_data, callback) => {
     } 
     for (let i = 0; i < user_data.length; i++) {
         // user_data[i] = parseInt(user_data[i]);
-        console.log(typeof user_data[i], user_data[i]);
-        if (typeof (user_data[i]) !== 'number') {
+        if (Number(user_data[i]) !== parseInt(user_data[i])) {
             return callback('Error: Numbers only', null);
         } 
     }
