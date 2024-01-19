@@ -1,7 +1,4 @@
 
-
-
-
 function multiplier(number1, number2, callback) {
     if (typeof number1 !== 'number' || typeof number2 !== 'number') {
         callback('Error: Numbers only', NULL);
