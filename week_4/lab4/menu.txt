@@ -1,11 +1,11 @@
-    *lunch Specials *
-$14.4 bento box a - chicken teriyaki box combo
-$16.2 bento box b - sashimi box combo
+* Lunch Specials *
+$14.40 bento box a - chicken teriyaki box combo
+$16.20 bento box b - sashimi box combo
 
-    *dinner Specials *
-$5.4 roe 2 rolls
-$7.2 tuna roll 3 rolls
-$5.4 vegetable sushi 6 rolls
+* Dinner Specials *
+$5.40 roe 2 rolls
+$7.20 tuna roll 3 rolls
+$5.40 vegetable sushi 6 rolls
 
-    *dessert Specials *
-$14.4 cheesecake 1 slice
+* Dessert Specials *
+$14.40 cheesecake 1 slice

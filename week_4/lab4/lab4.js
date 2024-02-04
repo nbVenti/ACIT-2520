@@ -43,7 +43,7 @@ readFileP("menu.csv")
         // sorting the CSV into the proper order
         for (let i = 0; i < data.length; i++) {
             if (data[i][0] == menu[menu.indexOf(data[i][0])]) {
-                price = '$' + String(parseInt(data[i][3].replace("$","")) * 1.8)
+                price = '$' + String(parseInt(data[i][3].replace("$","")) * 1.8) + "0"
                 menu.splice(menu.indexOf(data[i][0]) + 1 , 0, [price +" "+ data[i][1] +" "+ data[i][2]])
                 }
             }
@@ -51,7 +51,8 @@ readFileP("menu.csv")
         // formatting the final menu list
         for (i in menu) {
             if (typeof(menu[i]) === "string") {
-                menu[i] = "    " +"*" + menu[i] + " Specials *"
+                let x = menu[i].replace(menu[i][0],menu[i][0].toUpperCase())
+                menu[i] = "* " + x + " Specials *"
                 if ((i>=2)) {
                     menu[i] = "\n" + menu[i]
                 }
