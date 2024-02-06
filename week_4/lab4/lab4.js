@@ -44,7 +44,7 @@ readFileP("menu.csv")
         for (let i = 0; i < data.length; i++) {
             if (data[i][0] == menu[menu.indexOf(data[i][0])]) {
                 price = '$' + String(parseInt(data[i][3].replace("$","")) * 1.8) + "0"
-                menu.splice(menu.indexOf(data[i][0]) + 1 , 0, [price +" "+ data[i][1] +" "+ data[i][2]])
+                menu.splice(menu.indexOf(data[i][0]) + 1 , 0, [price +" "+ data[i][1], " " + data[i][2]])
                 }
             }
 
