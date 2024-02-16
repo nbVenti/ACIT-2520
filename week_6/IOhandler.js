@@ -80,9 +80,10 @@ const grayScale = (pathIn, pathOut) => {
               for (let x = 0; x < this.width; x++) {
                 const idx = (this.width * y + x) << 2;
                 const avg = (this.data[idx] + this.data[idx + 1] + this.data[idx + 2]) / 3;
-                this.data[idx] = avg;
-                this.data[idx + 1] = avg;
-                this.data[idx + 2] = avg;
+                // this.data[idx] = avg;
+                // this.data[idx + 1] = avg;
+                // this.data[idx + 2] = avg;
+                this.data[idx], this.data[idx + 1], this.data[idx + 2] = avg, avg, avg;
               }
             }
             this.pack().pipe(write);
