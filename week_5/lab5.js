@@ -5,8 +5,8 @@ const compare = require("./database.js");
 
 
 
-// const read = fs.createReadStream("C:\\Desktop\\term 2\\Files for js\\Cell_Phones_and_Accessories.ndjson"); // change value 
-// const write = fs.createWriteStream("C:\\Desktop\\term 2\\Files for js\\output.txt"); // change value
+const read = fs.createReadStream("C:\\Desktop\\term 2\\Files for js\\Cell_Phones_and_Accessories.ndjson"); // change value 
+const write = fs.createWriteStream("C:\\Desktop\\term 2\\Files for js\\output.txt"); // change value
 
 const parseStream = ndjson.parse();
 
@@ -54,3 +54,8 @@ pipeline(
       {console.log('Pipeline succeeded.');}
   }
 );
+
+
+
+
+
