@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express": "^4.18.3",
     "external-sorting": "^1.3.1"
   }
 }

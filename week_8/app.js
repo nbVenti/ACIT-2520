@@ -15,6 +15,11 @@ app.get('/', (req, res) => {
 );
 
 app.post("/convert", (req, res) => {
+
     console.log(res.body)
 }
 );
+
+app.get("/convert", (req, res) => {
+    res.render("convert");
+})
